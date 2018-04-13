@@ -19,4 +19,7 @@ describe('mostProfitableDepartment function', function(){
   it('should return the name of the department with the highest sales/outdoor', function(){
     assert.deepEqual(mostProfitableDepartment(salesData), 'outdoor');
   });
+  it('should return the name of the department that makes the most profite', function() {
+    assert.deepEqual(mostProfitableDepartment(salesData), 'outdoor');
+  });
 });

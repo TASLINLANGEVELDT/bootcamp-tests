@@ -1,9 +1,8 @@
 describe('regCheck' , function(){
-    it('should check for regNum with the provided location', function(){
-        assert.equal(regCheck('268265GP', 'GP'), true);
-
+    it('should check if regNum endsWith GP if it does it returns true', function(){
+        assert.equal(regCheck('NG 36 NB GP', 'GP'), true);
     });
-    it('should check regNum without the provided location', function(){
-        assert.equal(regCheck('268265GP', 'CA'), false);
+    it('should return false if locactionTag does not endsWith GP', function(){
+        assert.equal(regCheck('NG 36 NB CA', 'GP'), false);
     });
 });
