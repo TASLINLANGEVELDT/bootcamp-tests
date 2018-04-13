@@ -3,8 +3,8 @@ describe('transportFee', function(){
         assert.equal(transportFee('nightshift'), 'free');
 
     });
-    it('should return the incorrect fee or an error' , function(){
-        assert.notEqual(transportFee('nightshift'), 'R20');
+    it('should return the incorrect fee for the (afternoon) shift' , function(){
+        assert.equal(transportFee('afternoon'), 'R10');
 
     });
 });

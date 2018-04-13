@@ -3,7 +3,7 @@ describe('yearsAgo' , function(){
         assert.equal(yearsAgo('2010'), 8);
 
     });
-    it('should return false if the number of yearsAgo is not equal to 8', function(){
-        assert.notEqual(yearsAgo('2011'), 8);
+    it('should return the correct amount of years from then till now (7)', function(){
+        assert.equal(yearsAgo('2011'), 7);
     });
 });
